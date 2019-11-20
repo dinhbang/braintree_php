@@ -69,6 +69,13 @@ abstract class Instance
     {
         $this->_attributes = $attributes;
     }
+    /**
+    * Get Array data from protected $_attributes
+    @return Array
+    **/
+    public function __getAttributes() {
+        return $this->_attributes;
+    }
 
 }
 class_alias('Braintree\Instance', 'Braintree_Instance');
